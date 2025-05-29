@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '../ui/card';
 import { ThreatLevelBadge } from './ThreatLevelBadge';
@@ -31,22 +32,22 @@ export function RecentIncident({
               <h3 className="font-medium">{title}</h3>
               <ThreatLevelBadge level={threatLevel} />
             </div>
-
+            
             <p className="text-sm text-muted-foreground mt-1">{description}</p>
-
+            
             <div className="flex items-center gap-4 mt-3">
               <div className="flex items-center text-xs text-muted-foreground">
                 <MapPin className="h-3 w-3 mr-1" />
                 <span>{location}</span>
               </div>
-
+              
               <div className="flex items-center text-xs text-muted-foreground">
                 <Clock className="h-3 w-3 mr-1" />
                 <span>{time}</span>
               </div>
             </div>
           </div>
-
+          
           <div className="text-xs text-muted-foreground font-mono">
             #{id}
           </div>
