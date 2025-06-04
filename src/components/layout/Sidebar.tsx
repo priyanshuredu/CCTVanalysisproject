@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '../../libs/utils';
@@ -62,8 +63,7 @@ export function Sidebar() {
   return (
     <div className="h-screen w-64 flex flex-col bg-sidebar fixed overflow-y-auto">
       <div className="p-4 flex items-center gap-3 border-b border-sidebar-border">
-        <ShieldAlert className="h-6 w-6 text-cctv-accent" />
-        <h1 className="text-lg font-bold">Advance CCTV Solutions</h1>
+        <h1 className="text-lg font-bold">SurveilleX</h1>
       </div>
       
       <div className="flex-1 py-6">
@@ -99,10 +99,10 @@ export function Sidebar() {
       <div className="p-4 border-t border-sidebar-border">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 rounded-full bg-cctv-accent flex items-center justify-center text-primary-foreground font-semibold">
-            AI
+            U
           </div>
           <div>
-            <p className="text-sm font-medium">Surveillance System</p>
+            <p className="text-sm font-medium">User0321</p>
             <p className="text-xs text-muted-foreground">Online</p>
           </div>
         </div>
@@ -110,3 +110,4 @@ export function Sidebar() {
     </div>
   );
 }
+

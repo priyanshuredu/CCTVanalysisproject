@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { ResponsiveContainer, PieChart, Pie, Cell, Legend, Tooltip } from 'recharts';
@@ -19,7 +20,7 @@ export function IncidentsByCategory({ data, className }: IncidentsByCategoryProp
       <CardHeader className="pb-0">
         <CardTitle className="text-base">Incidents by Category</CardTitle>
       </CardHeader>
-
+      
       <CardContent>
         <div className="h-60">
           <ResponsiveContainer width="100%" height="100%">
@@ -37,18 +38,18 @@ export function IncidentsByCategory({ data, className }: IncidentsByCategoryProp
                   <Cell key={`cell-${index}`} fill={entry.color} />
                 ))}
               </Pie>
-              <Tooltip
+              <Tooltip 
                 formatter={(value) => [`${value} incidents`, '']}
-                contentStyle={{
-                  backgroundColor: 'hsl(var(--card))',
+                contentStyle={{ 
+                  backgroundColor: 'hsl(var(--card))', 
                   borderColor: 'hsl(var(--border))',
                   borderRadius: '8px',
                   fontSize: '12px',
-                }}
+                }} 
               />
               <Legend
-                layout="horizontal"
-                verticalAlign="bottom"
+                layout="horizontal" 
+                verticalAlign="bottom" 
                 align="center"
                 wrapperStyle={{
                   fontSize: '12px',
@@ -61,3 +62,4 @@ export function IncidentsByCategory({ data, className }: IncidentsByCategoryProp
     </Card>
   );
 }
+

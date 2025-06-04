@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { cn } from '../../libs/utils';
 import { Badge } from '../ui/badge';
@@ -51,3 +52,4 @@ export function ThreatLevelBadge({ level, className }: ThreatLevelBadgeProps) {
     </Badge>
   );
 }
+

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '../ui/card';
 import { LucideIcon } from 'lucide-react';
@@ -22,7 +23,7 @@ export function StatCard({ title, value, icon: Icon, trend, className }: StatCar
           <div>
             <p className="text-sm font-medium text-muted-foreground">{title}</p>
             <h3 className="text-2xl font-bold mt-1">{value}</h3>
-
+            
             {trend && (
               <div className="flex items-center mt-2">
                 <span className={`text-xs ${trend.isPositive ? 'text-green-500' : 'text-red-500'}`}>
@@ -32,7 +33,7 @@ export function StatCard({ title, value, icon: Icon, trend, className }: StatCar
               </div>
             )}
           </div>
-
+          
           <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center">
             <Icon className="h-6 w-6 text-primary" />
           </div>
@@ -41,3 +42,4 @@ export function StatCard({ title, value, icon: Icon, trend, className }: StatCar
     </Card>
   );
 }
+
